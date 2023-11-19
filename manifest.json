@@ -1,0 +1,42 @@
+{
+  "name": "DevAlt",
+  "description": "Manage your web space, delete cookies, schedule tasks, change images and manage extensions in your browser.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["alarms", "notifications", "storage","cookies", "declarativeNetRequest","tabs","management","proxy"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type":"module"
+  },
+  "action": {
+    "default_title": "DevAlt",
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "16": "images/1.png",
+    "32": "images/1.png",
+    "48": "images/1.png",
+    "128": "images/1.png"
+  },
+  "content_security_policy": {
+  "extension_pages": "default-src 'self'"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
+}

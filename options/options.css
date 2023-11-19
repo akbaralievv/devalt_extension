@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: start;
+    padding: 50px;
+}
+.taskLists{
+    width: 45%;
+}
+.taskLists>p{
+    font-size: 16px;
+    font-weight: 600;
+}
+h2{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+}
+#taskList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#taskList li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 250);
+    padding: 15px;
+    border-radius: 5px;
+}
+#taskList li div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+#taskList li div p{
+    width: 100%;
+    white-space: normal;
+    color: #2a1f62;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#taskList li button {
+    max-height: 65px;
+    align-items: center;
+    background: #f5f5fa;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
+    box-sizing: border-box;
+    color: #2a1f62;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Cascadia Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 15px;
+    position: relative;
+    text-align: left;
+    transition: 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    width: max-content;
+    word-break: normal;
+    word-spacing: normal;
+}
+
+#taskList li button:hover {
+    background: #f8f8ff;
+    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+
+@media (min-width: 768px) {
+    #taskList li button {
+        padding: 24px;
+    }
+}
+.man{
+    width: 45%;
+}
+.man>p{
+    font-size: 16px;
+    font-weight: 600;
+}
+#extensionList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+#extensionList li{
+    width: 100%;
+    padding: 15px;
+    background-color: #dfeaf8;
+    border-radius: 5px;
+    color: rgba(30, 32, 44, 0.95);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bg-container {
+    position: absolute;
+    z-index: -10;
+    top: 20%;
+    width: 100%;
+}

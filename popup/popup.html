@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popus.css" />
+    <title>Popup</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="../images/1.png" id="DevAlt" />
+    </div>
+
+    <div class="main">
+      <!-- <div class="proxyChanger">
+        <h2>Use a proxy from DevAlt!</h2>
+        <button id="toggleButton">Proxy: Enabled</button>
+      </div> -->
+
+      <div class="clearCookies">
+        <form id="control-row">
+          <label for="input">Protect your data on this site:</label>
+          <input type="text" id="input" />
+          <span id="message" hidden></span>
+          <button id="go">Clear Cookies</button>
+        </form>
+      </div>
+
+      <div class="changeImage">
+        <div class="checkbox-wrapper-12">
+          <div class="cbx">
+            <input id="cbx-12" type="checkbox" />
+            <label for="cbx-12"></label>
+            <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
+              <path d="M2 8.36364L6.23077 12L13 2"></path>
+            </svg>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo-12">
+                <fegaussianblur in="SourceGraphic" stddeviation="4" result="blur"></fegaussianblur>
+                <fecolormatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7"
+                  result="goo-12"
+                ></fecolormatrix>
+                <feblend in="SourceGraphic" in2="goo-12"></feblend>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <p>Change images on this site</p>
+      </div>
+
+      <div class="createTasks">
+        <label>Plan for the future: Create a new task!</label>
+        <button id="addTask">Add Task</button>
+      </div>
+    </div>
+
+    <div class="main-2">
+      <img src="../images/arrow.png" alt="arrow" id="arrow" />
+      <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Enter task name" />
+        <input type="datetime-local" id="taskDueDate" />
+        <button id="saveTask">Save Task</button>
+      </form>
+    </div>
+
+    <div class="openButton">
+      <button id="openTaskList">Open List</button>
+    </div>
+    <div class="box">
+      <div class="wave one"></div>
+      <div class="wave two"></div>
+      <div class="wave three"></div>
+    </div>
+  </body>
+  <script src="./popup.js" type="module"></script>
+</html>
